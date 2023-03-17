@@ -22,5 +22,5 @@ wasm-bindgen --out-dir ./out/ --target web ./target/
 ## Develop
 
 ```shell
-cargo generate -p . -n project-name
+cargo generate -p ./template -n project-name
 ```
