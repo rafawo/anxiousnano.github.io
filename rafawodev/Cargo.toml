@@ -1,0 +1,11 @@
+[package]
+name = "rafawodev"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = "0.10.0"
+
+[profile.dev.overrides.'cfg(target_arch = "wasm32")']
+opt-level = "z"
+debug = false

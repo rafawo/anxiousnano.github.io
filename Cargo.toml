@@ -1,5 +1,5 @@
 [workspace]
-members = []
+members = ["rafawodev"]
 exclude = ["template"]
 
 resolver = "2"
