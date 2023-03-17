@@ -1,4 +1,5 @@
 [workspace]
-members = ["template"]
+members = []
+exclude = ["template"]
 
 resolver = "2"
