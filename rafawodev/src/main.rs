@@ -8,8 +8,10 @@ use bevy::{
             AsBindGroup, Extent3d, ShaderRef, TextureDescriptor, TextureDimension, TextureFormat,
             TextureUsages,
         },
+        settings::{Backends, WgpuSettings},
         texture::BevyDefault,
         view::RenderLayers,
+        RenderPlugin,
     },
     sprite::{Material2d, Material2dPlugin, MaterialMesh2dBundle},
 };
@@ -29,6 +31,12 @@ fn main() {
                         ..default()
                     }),
                     ..default()
+                })
+                .set(RenderPlugin {
+                    wgpu_settings: WgpuSettings {
+                        backends: Some(Backends::PRIMARY),
+                        ..default()
+                    },
                 }),
         )
         .add_plugin(Material2dPlugin::<PostProcessingMaterial>::default())
