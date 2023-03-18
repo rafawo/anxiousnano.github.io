@@ -15,7 +15,7 @@ cargo install cargo-watch
 
 ```shell
 cargo build --release --target wasm32-unknown-unknown
-wasm-bindgen --out-dir ./out/ --target web ./target/
+cargo run --release --target wasm32-unknown-unknown
 ```
 
 ## Develop
