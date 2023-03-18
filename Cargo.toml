@@ -3,3 +3,7 @@ members = ["rafawodev"]
 exclude = ["template"]
 
 resolver = "2"
+
+[profile.release]
+opt-level = "z"
+debug = false
