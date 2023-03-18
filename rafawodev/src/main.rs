@@ -34,7 +34,7 @@ fn main() {
                 })
                 .set(RenderPlugin {
                     wgpu_settings: WgpuSettings {
-                        backends: Some(Backends::PRIMARY),
+                        backends: Some(Backends::BROWSER_WEBGPU),
                         ..default()
                     },
                 }),
