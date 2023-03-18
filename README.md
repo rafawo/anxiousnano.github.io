@@ -8,6 +8,7 @@ This repository holds the projects used to build anxiousnano, an experimental we
 rustup target install wasm32-unknown-unknown
 cargo install wasm-server-runner
 cargo install wasm-bindgen-cli
+cargo install cargo-watch
 ```
 
 ## Wasm
@@ -22,3 +23,4 @@ wasm-bindgen --out-dir ./out/ --target web ./target/
 - Run `cargo generate -p ./template -n project-name`
 - Edit `project-name/Cargo.toml` to change `name="some project name"`
 - Edit root `Cargo.toml` file to include the `project-name` into the `members=[]` property of the `[workspace]`
+- Optionally, `cargo watch -cx "run --release --target wasm32-unknown-unknown"`
