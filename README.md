@@ -18,6 +18,10 @@ cargo build --release --target wasm32-unknown-unknown
 cargo run --release --target wasm32-unknown-unknown
 ```
 
+```shell
+wasm-bindgen wasm-bindgen --out-dir ./out --target web ./target/wasm32-unknown-unknown/release/<<filename>>.wasm
+```
+
 ## Develop
 
 - Run `cargo generate -p ./template -n project-name`
